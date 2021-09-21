@@ -1,8 +1,8 @@
 # protools
 
-一个实现了批量将**`protobuf`数据**自动识别为**类`json`格式**，批量将**`proto`定义文件**转为**`python`类**。
+一个实现了批量将`protobuf`**数据**自动识别为**类**`json`**格式**，批量将`proto`**定义文件**转为`python`**类**。
 
-适用于需要转换大量的**`protobuf`数据**或**`proto`定义文件**。
+适用于需要转换大量的`protobuf`**数据**或`proto`**定义文件**。
 
 > 暂时只在`Windows 10 x64`、`Ubuntu 20.04 x64`的中文环境下做过测试，其他系统或语言环境如有问题欢迎提交issue。
 
@@ -24,17 +24,17 @@ protools -f ... -i ... -o ...
 
 ## demo
 
-1. 将`data`和`net`文件夹中所有文件当作**`protobuf`数据**批量自动识别为**类`json`格式**并写入到`json`文件夹。
+1. 将`data`和`net`文件夹中所有文件当作`protobuf`**数据**批量自动识别为**类**`json`**格式**并写入到`json`文件夹。
    ```shell
    protools -f b2j -i data -i net -o json
    ```
    ![screenshot](screenshots/buf2json_m2o.gif "screenshot")
-2. 将`data`和`net`文件夹中所有文件当作**`protobuf`数据**批量自动识别为**类`json`格式**并分别写入到`data_json`和`net_json`文件夹。
+2. 将`data`和`net`文件夹中所有文件当作`protobuf`**数据**批量自动识别为**类**`json`**格式**并分别写入到`data_json`和`net_json`文件夹。
    ```shell
    protools -f b2j -i data -i net -o data_json -o net_json
    ```
    ![screenshot](screenshots/buf2json_m2m.gif "screenshot")
-3. 将`proto`文件夹中的所有文件当作**`proto`定义文件**批量转为**`python`类**并写入到`python`文件夹。
+3. 将`proto`文件夹中的所有文件当作`proto`**定义文件**批量转为`python`**类**并写入到`python`文件夹。
    ```shell
    protools -f p2p -i proto -o python
    ```
