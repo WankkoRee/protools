@@ -1,0 +1,2 @@
+rich~=10.10.0
+rich-LogConsole~=1.0.2

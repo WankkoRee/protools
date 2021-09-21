@@ -1,0 +1,5 @@
+/.idea/
+/.eggs/
+/dist/
+/protools.egg-info/
+/build/
