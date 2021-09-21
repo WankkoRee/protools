@@ -10,7 +10,7 @@ setuptools.setup(
     version="1.0.1",
     author="Wankko Ree",
     author_email="wkr@wkr.moe",
-    description="一个实现了批量将 protobuf 数据自动识别为类 json 格式，批量将 proto 定义文件转为 python 类。适用于需要转换大量的 protobuf 数据或 proto 定义文件。",
+    description="一个实现了批量将 protobuf 数据自动识别为类 json 格式，批量将 proto 定义文件转为 python 类的命令行工具。适用于需要转换大量的 protobuf 数据或 proto 定义文件。",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="GPLv3",
