@@ -38,10 +38,12 @@ def buf2json(cmd, localpath, inf, outf, progress, log, warn):
             popen.wait()
             err = popen.communicate()[1]
             if err:
+                logline = logline.copy()
                 logline.append('\t')
                 logline.append(Text(err.decode().strip(), style="red"))
                 warn.log(logline)
         except Exception as err:
+            logline = logline.copy()
             logline.append('\t')
             logline.append(Text(err, style="red"))
             warn.log(logline)
@@ -75,18 +77,12 @@ def proto2python(cmd, localpath, inf, outf, progress, log, warn):
             popen.wait()
             err = popen.communicate()[1]
             if err:
-                logline = Text()
-                logline.append(Text(f'{inf}/{name}.{fmt}', style="magenta"))
-                logline.append(' -> ')
-                logline.append(Text(f'{outf}/{name}_pb2.py', style="magenta"))
+                logline = logline.copy()
                 logline.append('\t')
                 logline.append(Text(err.decode().strip(), style="red"))
                 warn.log(logline)
         except Exception as err:
-            logline = Text()
-            logline.append(Text(f'{inf}/{name}.{fmt}', style="magenta"))
-            logline.append(' -> ')
-            logline.append(Text(f'{outf}/{name}_pb2.py', style="magenta"))
+            logline = logline.copy()
             logline.append('\t')
             logline.append(Text(err, style="red"))
             warn.log(logline)
