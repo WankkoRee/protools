@@ -28,17 +28,17 @@ protools -f ... -i ... -o ...
    ```shell
    protools -f b2j -i data -i net -o json
    ```
-   ![screenshot](screenshot/buf2json_m2o.gif "screenshot")
+   ![screenshot](screenshots/buf2json_m2o.gif "screenshot")
 2. 将`data`和`net`文件夹中所有文件当作**`protobuf`数据**批量自动识别为**类`json`格式**并分别写入到`data_json`和`net_json`文件夹。
    ```shell
    protools -f b2j -i data -i net -o data_json -o net_json
    ```
-   ![screenshot](screenshot/buf2json_m2m.gif "screenshot")
+   ![screenshot](screenshots/buf2json_m2m.gif "screenshot")
 3. 将`proto`文件夹中的所有文件当作**`proto`定义文件**批量转为**`python`类**并写入到`python`文件夹。
    ```shell
    protools -f p2p -i proto -o python
    ```
-   ![screenshot](screenshot/proto2python_o2o.gif "screenshot")
+   ![screenshot](screenshots/proto2python_o2o.gif "screenshot")
 
 ## License
 
