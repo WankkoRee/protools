@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="protools",
-    version="1.0.1",
+    version="1.0.2",
     author="Wankko Ree",
     author_email="wkr@wkr.moe",
     description="一个实现了批量将 protobuf 数据自动识别为类 json 格式，批量将 proto 定义文件转为 python 类的命令行工具。适用于需要转换大量的 protobuf 数据或 proto 定义文件。",

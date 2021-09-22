@@ -120,12 +120,13 @@ def prepare():
         rprint(grid)
         return
     func = funcs[0]
+    protocVersion = '3.18.0'
     import platform
     if platform.system().lower() in {'windows'}:
         if platform.machine().lower() in {'amd64'}:
-            cmd = 'protoc-3.18.0-win64'
+            cmd = f'protoc-{protocVersion}-win64'
         elif platform.machine().lower() in {'x86'}:
-            cmd = 'protoc-3.18.0-win32'
+            cmd = f'protoc-{protocVersion}-win32'
         else:
             rprint("[bold red]未知的操作系统环境，无法运行，请提交issue[/bold red]")
             rprint(f"[bold magenta]{platform.system()}[/bold magenta]")
@@ -133,15 +134,15 @@ def prepare():
             return
     elif platform.system().lower() in {'linux'}:
         if platform.machine().lower() in {'x86_64'}:
-            cmd = 'protoc-3.18.0-linux-x86_64'
+            cmd = f'protoc-{protocVersion}-linux-x86_64'
         elif platform.machine().lower() in {'i686'}:
-            cmd = 'protoc-3.18.0-linux-x86_32'
+            cmd = f'protoc-{protocVersion}-linux-x86_32'
         elif platform.machine().lower() in {'aarch_64'}:
-            cmd = 'protoc-3.18.0-linux-aarch_64'
+            cmd = f'protoc-{protocVersion}-linux-aarch_64'
         elif platform.machine().lower() in {'ppcle_64'}:
-            cmd = 'protoc-3.18.0-linux-ppcle_64'
+            cmd = f'protoc-{protocVersion}-linux-ppcle_64'
         elif platform.machine().lower() in {'s390_64'}:
-            cmd = 'protoc-3.18.0-linux-s390_64'
+            cmd = f'protoc-{protocVersion}-linux-s390_64'
         else:
             rprint("[bold red]未知的操作系统架构，无法运行，请提交issue[/bold red]")
             rprint(f"[bold magenta]{platform.system()}[/bold magenta]")
@@ -151,7 +152,7 @@ def prepare():
         os.chmod(localpath + 'bin/' + cmd, stat.S_IXOTH | stat.S_IXGRP | stat.S_IXUSR)
     elif platform.system().lower() in {'darwin'}:
         if platform.machine().lower() in {'x86_64'}:
-            cmd = 'protoc-3.18.0-osx-x86_64'
+            cmd = f'protoc-{protocVersion}-osx-x86_64'
         else:
             rprint("[bold red]未知的操作系统架构，无法运行，请提交issue[/bold red]")
             rprint(f"[bold magenta]{platform.system()}[/bold magenta]")
