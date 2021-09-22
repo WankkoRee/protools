@@ -1,4 +1,4 @@
-# protools
+# protools [![GitHub Repo stars](https://img.shields.io/github/stars/WankkoRee/protools?label=Github%20Stars&style=social "GitHub Repo stars")](https://github.com/WankkoRee/protools) [![GitHub Downloads](https://img.shields.io/github/downloads/WankkoRee/protools/total?label=GitHub%20Downloads&logo=github&style=social)](https://github.com/WankkoRee/protools/releases) [![PyPI Downloads](https://img.shields.io/pypi/dm/protools?label=PyPI%20Downloads&logo=pypi&style=social)](https://pypi.org/project/protools/)
 
 一个实现了批量将`protobuf`**数据**自动识别为**类**`json`**格式**，批量将`proto`**定义文件**转为`python`**类**的命令行工具。
 
@@ -10,6 +10,14 @@
 
 ```shell
 pip install protools
+```
+
+## update
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/WankkoRee/protools?color=%23fff&label=GitHub&logo=github&logoColor=%23fff)](https://github.com/WankkoRee/protools/releases) [![PyPI](https://img.shields.io/pypi/v/protools?color=%23fff&label=PyPI&logo=pypi&logoColor=%23fff)](https://pypi.org/project/protools/)
+
+```shell
+pip install --upgrade protools
 ```
 
 ## use
@@ -42,4 +50,4 @@ protools -f ... -i ... -o ...
 
 ## License
 
-[GPLv3](https://github.com/WankkoRee/protools/blob/master/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/WankkoRee/protools?color=%23f7f7f7&logo=gnu&logoColor=%23fff&style=for-the-badge)](https://github.com/WankkoRee/protools/blob/master/LICENSE)
